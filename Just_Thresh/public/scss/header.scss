@@ -1,0 +1,226 @@
+// include library
+%grid_cl {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+%grid_rw {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+%center_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin set_center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+// Hello word
+body {
+    margin: 0 auto;
+}
+
+// Code css for herder
+// -- structure header
+header {
+    height: 85px;
+    width: 100vw;
+    position: fixed;
+    .main_body {
+        height: 85px;
+        width: 85%;
+        border: 1px solid black;
+        @extend %center_main;
+        .left_header {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 450px;
+            height: 100%;
+        }
+        .right_header {
+            position: absolute;
+            height: 100%;
+            right: 50px;
+            top: 0px;
+        }
+    }
+}
+
+// -- item structure
+.main_body {
+    // -- left main
+    .left_header {
+        .pic {
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+            @include set_center(50%, 25%);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h3 {
+            @include set_center(10%, 57%);
+            font-family: 'Permanent Marker', cursive;
+            font-size: 32px;
+            color: rgb(87, 19, 151);
+        }
+    }
+    // -- Righht main
+    .right_header {
+        display: grid;
+        @extend %grid_cl;
+        .item_header1 {
+            height: 100%;
+            width: 250px;
+        }
+        .item_header2 {
+            height: 100%;
+            width: 170px;
+        }
+        .item_header3 {
+            height: 100%;
+            width: 110px;
+        }
+        .item_header1,
+        .item_header2,
+        .item_header3 {
+            position: relative;
+            a {
+                @include set_center(50%, 35%);
+                text-decoration: none;
+                font-family: 'Lobster', cursive;
+                color: black;
+                font-size: 18px;
+                &:hover {
+                    color: rgb(68, 68, 68);
+                    transition: 0.5s;
+                }
+            }
+        }
+        .item_icon_search {
+            height: 85px;
+            width: 30px;
+            position: relative;
+            .icon {
+                width: 30px;
+                height: 50px;
+                @include set_center(50%, 10px);
+                i {
+                    font-size: 20px;
+                    @extend %center_main;
+                    cursor: pointer;
+                }
+            }
+        }
+        .item_sign {
+            height: 85px;
+            width: 150px;
+        }
+        // item for item ..............................
+        .item_header1 {
+            i {
+                @include set_center(52%, 190px);
+                font-size: 13px;
+            }
+        }
+        .item_header2 {
+            i {
+                @include set_center(52%, 125px);
+                font-size: 13px;
+            }
+        }
+        .item_header3 {
+            i {
+                @include set_center(52%, 120px);
+                font-size: 13px;
+            }
+        }
+    }
+    // -- hover for item
+    .item_header1,
+    .item_header2,
+    .item_header3 {
+        .add_class {
+            position: absolute;
+            width: 300px;
+            top: 85px;
+            left: 10px;
+            overflow: hidden;
+            background: white;
+            .doc {
+                position: absolute;
+                top: 20px;
+                height: 80%;
+                width: 100%;
+                li {
+                    line-height: 2.5;
+                    list-style: none;
+                    padding-left: 40px;
+                    cursor: pointer;
+                    span {
+                        font-family: 'Lobster', cursive;
+                    }
+                }
+                li:hover {
+                    background: rgb(143, 115, 115);
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+    // hover class 
+    .item_header1:hover>.add_class {
+        height: 200px;
+    }
+    .item_header2:hover>.add_class {
+        height: 200px;
+    }
+    .item_header3:hover>.add_class {
+        height: 150px;
+    }
+}
+
+// search Tag
+.main_body {
+    .form_search {
+        height: 85px;
+        width: 545px;
+        position: absolute;
+        top: -85px;
+        right: 210px;
+        border-radius: 5px;
+        overflow: hidden;
+        input {
+            border-radius: 5px;
+            height: 86px;
+            width: 480px;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            overflow: hidden;
+        }
+        label {
+            height: 85px;
+            width: 60px;
+            position: absolute;
+            right: 0px;
+            i {
+                @extend %center_main;
+                font-size: 20px;
+            }
+        }
+    }
+}

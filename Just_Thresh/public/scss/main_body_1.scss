@@ -1,0 +1,32 @@
+// include library
+%grid_cl {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+%grid_rw {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+%center_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin set_center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+.main_body_center {
+    position: absolute;
+    top: 85px;
+    width: 400px;
+    height: 400px;
+    background-image: url(/pictures/Suport_champion/Morgana/Morgana_BladeMistressSkin.jpg);
+}
