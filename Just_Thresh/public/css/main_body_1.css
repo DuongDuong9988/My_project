@@ -1,8 +1,9 @@
 .main_body_center {
   position: absolute;
   top: 85px;
-  width: 400px;
+  width: 100%;
   height: 400px;
-  background-image: url(/pictures/Suport_champion/Morgana/Morgana_BladeMistressSkin.jpg);
+  background-image: url(/pictures/Suport_champion/Thresh/thresh_main_picture.png);
+  background-size: cover;
 }
 /*# sourceMappingURL=main_body_1.css.map */

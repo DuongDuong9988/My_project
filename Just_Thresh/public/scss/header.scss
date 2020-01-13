@@ -37,7 +37,6 @@ header {
     .main_body {
         height: 85px;
         width: 85%;
-        border: 1px solid black;
         @extend %center_main;
         .left_header {
             position: absolute;

@@ -25,7 +25,6 @@ header {
 header .main_body {
   height: 85px;
   width: 85%;
-  border: 1px solid black;
 }
 
 header .main_body .left_header {
