@@ -20,6 +20,7 @@ header {
   height: 85px;
   width: 100vw;
   position: fixed;
+  z-index: 1000;
 }
 
 header .main_body {
@@ -170,6 +171,12 @@ header .main_body .right_header {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 13px;
+}
+
+.main_body .item_header1,
+.main_body .item_header2,
+.main_body .item_header3 {
+  z-index: 2;
 }
 
 .main_body .item_header1 .add_class,

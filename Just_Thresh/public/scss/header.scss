@@ -34,6 +34,7 @@ header {
     height: 85px;
     width: 100vw;
     position: fixed;
+    z-index: 1000;
     .main_body {
         height: 85px;
         width: 85%;
@@ -152,6 +153,7 @@ header {
     .item_header1,
     .item_header2,
     .item_header3 {
+        z-index: 2;
         .add_class {
             position: absolute;
             width: 300px;
