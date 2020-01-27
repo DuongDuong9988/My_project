@@ -1,3 +1,9 @@
+.main_list_skin, .list_acc .acc_lol a .full_info_acc {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
 .main_body_center {
   position: absolute;
   top: 85px;
@@ -9,5 +15,146 @@
   height: 400px;
   background-image: url(/pictures/Suport_champion/Thresh/thresh_main_picture.png);
   background-size: cover;
+}
+
+.item_main_1 .icon_picture {
+  height: 225px;
+  width: 225px;
+  background: red;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.item_main_1 .icon_picture img {
+  width: 100%;
+  height: 100%;
+}
+
+.item_main_2 {
+  position: absolute;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: auto;
+}
+
+.item_main_2 h3 {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 32px;
+}
+
+.item_main_2 h4 {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 32px;
+}
+
+.main_list_skin {
+  position: absolute;
+  top: 545px;
+  width: 100%;
+  justify-items: center;
+}
+
+.main_list_skin .list_skin_item {
+  width: 95%;
+}
+
+.main_list_skin .list_skin_item h4 {
+  float: left;
+  font-family: 'Lobster', cursive;
+}
+
+.main_list_skin .list_skin_item .list_acc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_list_skin .list_skin_item .list_acc .acc_lol {
+  height: 15vw;
+  width: 20%;
+}
+
+.main_list_skin .list_skin_item .list_acc .acc_lol img {
+  width: 98%;
+  height: 100%;
+}
+
+.main_list_skin .list_skin_item a {
+  float: right;
+}
+
+.main_list_skin .info_finish {
+  height: 200px;
+  width: 100%;
+  background: red;
+}
+
+.list_acc .acc_lol {
+  position: relative;
+}
+
+.list_acc .acc_lol img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.list_acc .acc_lol .info_acc_lol {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.list_acc .acc_lol a {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+.list_acc .acc_lol a .full_info_acc {
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  justify-items: start;
+  padding-left: 20px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.list_acc .acc_lol:hover > .info_acc_lol {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: calc(98% - 40px);
+  height: calc(100% - 20px);
+  top: 20px;
+  left: 20px;
 }
 /*# sourceMappingURL=main_body_1.css.map */

@@ -20,7 +20,8 @@ header {
   height: 85px;
   width: 100vw;
   position: fixed;
-  z-index: 1000;
+  background: white;
+  z-index: 2;
 }
 
 header .main_body {
@@ -59,6 +60,7 @@ header .main_body .right_header {
 .main_body .left_header .pic img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .main_body .left_header h3 {
@@ -70,6 +72,7 @@ header .main_body .right_header {
   font-family: 'Permanent Marker', cursive;
   font-size: 32px;
   color: #571397;
+  cursor: pointer;
 }
 
 .main_body .right_header {
@@ -78,23 +81,24 @@ header .main_body .right_header {
 }
 
 .main_body .right_header .item_header1 {
-  height: 100%;
+  height: 84px;
   width: 250px;
 }
 
 .main_body .right_header .item_header2 {
-  height: 100%;
+  height: 84px;
   width: 170px;
 }
 
 .main_body .right_header .item_header3 {
-  height: 100%;
+  height: 84px;
   width: 110px;
 }
 
 .main_body .right_header .item_header1,
 .main_body .right_header .item_header2,
 .main_body .right_header .item_header3 {
+  cursor: pointer;
   position: relative;
 }
 
@@ -124,6 +128,8 @@ header .main_body .right_header {
   height: 85px;
   width: 30px;
   position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .main_body .right_header .item_icon_search .icon {
@@ -159,15 +165,6 @@ header .main_body .right_header {
   position: absolute;
   top: 52%;
   left: 125px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 13px;
-}
-
-.main_body .right_header .item_header3 i {
-  position: absolute;
-  top: 52%;
-  left: 120px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 13px;
@@ -223,11 +220,11 @@ header .main_body .right_header {
 }
 
 .main_body .item_header1:hover > .add_class {
-  height: 200px;
+  height: 193px;
 }
 
 .main_body .item_header2:hover > .add_class {
-  height: 200px;
+  height: 150px;
 }
 
 .main_body .item_header3:hover > .add_class {
@@ -235,33 +232,38 @@ header .main_body .right_header {
 }
 
 .main_body .form_search {
-  height: 85px;
+  height: 84px;
   width: 545px;
   position: absolute;
   top: -85px;
   right: 210px;
   border-radius: 5px;
+  z-index: 3;
   overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .main_body .form_search input {
   border-radius: 5px;
-  height: 86px;
+  height: 84px;
   width: 480px;
   outline: none;
   border: none;
   font-size: 18px;
   overflow: hidden;
+  padding-left: 40px;
 }
 
 .main_body .form_search label {
   height: 85px;
   width: 60px;
   position: absolute;
-  right: 0px;
+  right: -20px;
 }
 
 .main_body .form_search label i {
   font-size: 20px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=header.css.map */
