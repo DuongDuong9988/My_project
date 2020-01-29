@@ -1,0 +1,114 @@
+// include library
+%grid_cl {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+%grid_rw {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+%center_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin set_center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+// list skin normal
+.main_list_skin{
+    position: absolute;
+    top: 545px;
+    width: 100%;
+    @extend %grid_rw;
+    justify-items: center;
+    .list_skin_normal{
+        width: 95%;
+        h4{
+            float: left;
+            font-family: 'Lobster', cursive;
+        }
+        .list_acc{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .acc_lol{
+                height: 16vw;;
+                width: 20%;
+                img{
+                    width: 98%;
+                    height: 96%;
+                }
+            }
+        }
+        a{
+            float: right;
+        }
+    }
+    .info_finish{
+        height: 200px;
+        width: 100%;
+        background: red;
+    }
+}
+.list_skin_normal{
+    // create info some thing for acc_lol
+    .list_acc{
+        .acc_lol{
+            position: relative;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .info_acc_lol{
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0.85;
+                z-index: 2;
+            }
+            a{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-family: 'Lobster', cursive;
+                color: white;
+                .full_info_acc{
+                    position: absolute;
+                    background: black;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    justify-items: start;
+                    padding-left: 20px;
+                    li{
+                        margin-top: 7%;
+                    }
+                }
+            }
+        }
+        .acc_lol:hover> .info_acc_lol{
+            transition: 0.7s;
+            width: calc(98% - 40px);
+            height: calc(96% - 20px);
+            top: 20px;
+            left: 20px;
+        }
+    }
+}

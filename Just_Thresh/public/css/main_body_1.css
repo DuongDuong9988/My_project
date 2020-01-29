@@ -1,4 +1,4 @@
-.main_list_skin, .list_acc .acc_lol a .full_info_acc {
+.main_list_skin {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
@@ -120,7 +120,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.8;
+  opacity: 0.85;
   z-index: 2;
 }
 
@@ -142,11 +142,16 @@
   top: 0;
   left: 0;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-items: start;
   padding-left: 20px;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+}
+
+.list_acc .acc_lol a .full_info_acc li {
+  margin-top: 7%;
 }
 
 .list_acc .acc_lol:hover > .info_acc_lol {

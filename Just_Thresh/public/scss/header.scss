@@ -35,7 +35,7 @@ header {
     width: 100vw;
     position: fixed;
     background: white;
-    z-index: 2;
+    z-index: 4;
     .main_body {
         height: 85px;
         width: 85%;
@@ -156,7 +156,7 @@ header {
         .add_class {
             position: absolute;
             width: 300px;
-            top: 85px;
+            top: 84px;
             left: 10px;
             overflow: hidden;
             background: white;

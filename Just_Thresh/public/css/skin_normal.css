@@ -1,0 +1,110 @@
+.main_list_skin {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.main_list_skin {
+  position: absolute;
+  top: 545px;
+  width: 100%;
+  justify-items: center;
+}
+
+.main_list_skin .list_skin_normal {
+  width: 95%;
+}
+
+.main_list_skin .list_skin_normal h4 {
+  float: left;
+  font-family: 'Lobster', cursive;
+}
+
+.main_list_skin .list_skin_normal .list_acc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_list_skin .list_skin_normal .list_acc .acc_lol {
+  height: 16vw;
+  width: 20%;
+}
+
+.main_list_skin .list_skin_normal .list_acc .acc_lol img {
+  width: 98%;
+  height: 96%;
+}
+
+.main_list_skin .list_skin_normal a {
+  float: right;
+}
+
+.main_list_skin .info_finish {
+  height: 200px;
+  width: 100%;
+  background: red;
+}
+
+.list_skin_normal .list_acc .acc_lol {
+  position: relative;
+}
+
+.list_skin_normal .list_acc .acc_lol img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.list_skin_normal .list_acc .acc_lol .info_acc_lol {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+  z-index: 2;
+}
+
+.list_skin_normal .list_acc .acc_lol a {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+.list_skin_normal .list_acc .acc_lol a .full_info_acc {
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: start;
+  padding-left: 20px;
+}
+
+.list_skin_normal .list_acc .acc_lol a .full_info_acc li {
+  margin-top: 7%;
+}
+
+.list_skin_normal .list_acc .acc_lol:hover > .info_acc_lol {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: calc(98% - 40px);
+  height: calc(96% - 20px);
+  top: 20px;
+  left: 20px;
+}
+/*# sourceMappingURL=skin_normal.css.map */

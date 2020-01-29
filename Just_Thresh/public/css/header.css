@@ -21,7 +21,7 @@ header {
   width: 100vw;
   position: fixed;
   background: white;
-  z-index: 2;
+  z-index: 4;
 }
 
 header .main_body {
@@ -181,7 +181,7 @@ header .main_body .right_header {
 .main_body .item_header3 .add_class {
   position: absolute;
   width: 300px;
-  top: 85px;
+  top: 84px;
   left: 10px;
   overflow: hidden;
   background: white;

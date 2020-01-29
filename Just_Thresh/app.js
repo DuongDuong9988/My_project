@@ -19,7 +19,9 @@ app.set('view engine', 'pug');
 app.get('/', function(req, res) {
     res.render('index')
 });
-
+app.get("/skin_normal" , function(req , res){
+    res.render('skin_normal');
+});
 // Routers
 
 // Eroor > page noy found 404
