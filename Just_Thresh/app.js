@@ -15,6 +15,12 @@ app.use(express.static(path.join(__dirname, 'uploads')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+// send data infomation acc lol..................
+app.post("/data_acc.pug", function(req, res ){
+    res.render('data_acc');
+});
+//...............................................
+
 // Test serve
 app.get('/', function(req, res) {
     res.render('index')
@@ -23,6 +29,9 @@ app.get("/skin_normal" , function(req , res){
     res.render('skin_normal');
 });
 // Routers
+app.get("/acc_lien_minh", function(req, res ){
+    res.render('show_info_acc');
+})
 
 // Eroor > page noy found 404
 app.use((req, res, next) => {

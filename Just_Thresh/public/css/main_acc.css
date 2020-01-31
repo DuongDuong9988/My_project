@@ -1,0 +1,81 @@
+.main_info_acc_lol .main .picture img, .main_info_acc_lol .main .info_acc .info_all_acc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_info_acc_lol {
+  position: absolute;
+  top: 85px;
+  height: calc(100vh - 85px - 7vw);
+  width: 100%;
+}
+
+.main_info_acc_lol .main {
+  width: 90vw;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.main_info_acc_lol .main .picture {
+  height: 100%;
+  position: relative;
+}
+
+.main_info_acc_lol .main .picture img {
+  width: 90%;
+  height: 35vw;
+}
+
+.main_info_acc_lol .main .info_acc {
+  height: 100%;
+  position: relative;
+}
+
+.main_info_acc_lol .main .info_acc .info_all_acc {
+  width: 100%;
+  text-align: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40px 40px 40px 40px 40px 50px calc(35vw - 270px);
+      grid-template-rows: 40px 40px 40px 40px 40px 50px calc(35vw - 270px);
+}
+
+.main_info_acc_lol .main .info_acc .info_all_acc li span {
+  color: black;
+  font-size: 17px;
+  font-family: 'Lobster', cursive;
+}
+
+.main_info_acc_lol .main .info_acc .info_all_acc button {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background: blue;
+  border-radius: 5px;
+}
+
+.main_info_acc_lol .main .info_acc .info_all_acc .list_acc_flow {
+  background: brown;
+  width: 100%;
+  bottom: 0px;
+}
+
+.finish_main_acc {
+  position: absolute;
+  bottom: 0;
+  height: 7vw;
+  width: 100%;
+  background: red;
+}
+/*# sourceMappingURL=main_acc.css.map */

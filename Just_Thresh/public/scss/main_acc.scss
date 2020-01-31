@@ -1,0 +1,86 @@
+// include library
+%grid_cl {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+%grid_rw {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+%center_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin set_center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+// .................................
+.main_info_acc_lol{
+    position: absolute;
+    top: 85px;
+    height: calc(100vh - 85px - 7vw);
+    width: 100%;
+    .main{
+        width: 90vw;
+        height: 100%;
+        @include set_center(50%, 50%);
+        display: grid;
+        grid-template-columns: 70% 30%;
+        .picture{
+            height: 100%;
+            position: relative;
+            img{
+                width: 90%;
+                height: 35vw;
+                @extend %center_main;
+            }
+        }
+        .info_acc{
+            height: 100%;
+            position: relative;
+            .info_all_acc{
+                width: 100%;
+                @extend %center_main;
+                text-align: start;
+                display: grid;
+                grid-template-rows: 40px 40px 40px 40px 40px 50px calc(35vw - 270px);
+                li{
+                    span{
+                        color: black;
+                        font-size: 17px;
+                        font-family: 'Lobster', cursive;
+                    }
+
+                }
+                button{
+                    height: 40px;
+                    width: 100px;
+                    cursor: pointer;
+                    background: blue;
+                    border-radius: 5px;;
+                }
+                .list_acc_flow{
+                    background: brown;
+                    width: 100%;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}
+//.............................
+.finish_main_acc{
+    position: absolute;
+    bottom: 0;
+    height: 7vw;
+    width: 100%;
+    background: red;
+}

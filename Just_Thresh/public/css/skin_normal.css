@@ -36,7 +36,7 @@
 
 .main_list_skin .list_skin_normal .list_acc .acc_lol img {
   width: 98%;
-  height: 96%;
+  height: 95%;
 }
 
 .main_list_skin .list_skin_normal a {
@@ -103,7 +103,7 @@
   -webkit-transition: 0.7s;
   transition: 0.7s;
   width: calc(98% - 40px);
-  height: calc(96% - 20px);
+  height: calc(95% - 20px);
   top: 20px;
   left: 20px;
 }
